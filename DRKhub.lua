@@ -68,10 +68,3 @@ local function createHitbox(player)
 
     game:GetService("RunService").RenderStepped:Connect(updateHitbox)
 end
-        for _, otherPlayer in ipairs(game.Players:GetPlayers()) do
-            if otherPlayer ~= player then
-                createHitbox(otherPlayer)
-            end
-        end
-        print("Hitbox ESP enabled.")
-    end
